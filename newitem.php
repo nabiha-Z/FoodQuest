@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-$conn=mysqli_connect("localhost","root","","fooditems");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 if($conn){
 	echo"connected successfully";
 }

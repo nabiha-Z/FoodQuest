@@ -4,7 +4,7 @@ session_start();
 	   echo "<script>alert('Login into your account')</script>";
 	   
 ?>
-		<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/AboutUs.php">	   
+		<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/AboutUs.php">	   
 <?php  
   }else{
 
@@ -15,7 +15,7 @@ session_start();
    $userid=$_SESSION['id'];
    $image=$_SESSION['image'];
    $name=$_SESSION['name'];
-   $conn=mysqli_connect("localhost","root","","feedback");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_feedback");
    $dup=mysqli_query($conn,"SELECT * FROM reviews WHERE UserID='$userid'");
    if(mysqli_num_rows($dup)>0){
 	   echo "<script>alert('A review already exists from this account!')</script>";
@@ -29,7 +29,7 @@ session_start();
    }
    }
    ?>
-   <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/AboutUs.php#feedback">	   
+   <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/AboutUs.php#feedback">	   
 <?php 
  }
 ?>

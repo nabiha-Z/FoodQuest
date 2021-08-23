@@ -107,7 +107,7 @@ $(document).ready(function(){
    if ($_SERVER["REQUEST_METHOD"] == "POST"){
    $rating=$_REQUEST['rating'];
    echo $rating;
-   $conn=mysqli_connect("localhost","root","","fooditems");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
    $dup=mysqli_query($conn,"SELECT * FROM items WHERE ID='$itemID'");
    if(mysqli_num_rows($dup) > 0){	  
 							while($row = mysqli_fetch_assoc($dup)) {
@@ -125,11 +125,11 @@ $(document).ready(function(){
 		   echo $averageRating . "<br>";
       $sql=mysqli_query ($conn,"UPDATE items SET AverageRating = '$averageRating' WHERE ID = '$itemID'");
 
-	  $conn2=mysqli_connect("localhost","root","","checkout");
+	  $conn2=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_checkout");
 	  $sql2=mysqli_query($conn2, "UPDATE confirmorders SET Rated = 'Yes' WHERE ItemID = '$itemID'");
      echo ' <script>alert("Thank for your response!")</script>';
     ?>
-   <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/OrderHistory.php?">	   
+   <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/OrderHistory.php?">	   
 <?php 
    }
 ?>

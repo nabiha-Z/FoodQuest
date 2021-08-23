@@ -79,7 +79,7 @@
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $conn=mysqli_connect("localhost","root","","register");
+    $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_register");
         
 		$firstname=$_REQUEST['firstname'];
 		$lastname=$_REQUEST['lastname'];
@@ -102,7 +102,7 @@
 		if($data){
 			echo "dedwede";
 			?>
-			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/AdminDashboard.php">
+			<meta HTTP-EQUIV="Refresh" content="0; URL=Food%20Ordeing%20System/AdminDashboard.php">
 		
 		<?php
 		}else{

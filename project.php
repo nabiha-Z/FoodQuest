@@ -1,6 +1,6 @@
 <br>
 <?php 
-$conn=mysqli_connect("localhost","root","","signup");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_signup");
 if($conn){
 	echo"connected successfully";
 }

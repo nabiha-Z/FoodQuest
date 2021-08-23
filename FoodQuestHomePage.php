@@ -1,6 +1,6 @@
 <?php 
 
-  $conn=mysqli_connect("localhost","root","","feedback"); 
+  $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_feedback"); 
   $result = mysqli_query($conn,"SELECT * FROM reviews");
 
   
@@ -125,7 +125,7 @@
 
     <div class="container" id="footer">
       <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-      <a href="Food Quest Home Page.html#SignUp" target=_blank class="new_Account">Create New Account</a></span>
+      <a href="FoodQuestHomePage.php#SignUp" target=_blank class="new_Account">Create New Account</a></span>
     </div>
   </form>
 </div>
@@ -244,7 +244,7 @@
 	    <div class="row">
 		<div class="col-lg-6 col-md-3 col-sm-2"> 
 		</div>
-		    <div class="col-lg-6 col-md-9 col-sm-10"> 
+		    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12"> 
 			    <div class="Register-Box">
 				<h2>Want to become part of Food Quest?</h2> 
 				<p>Would you like thousands of new customers to Tasteful and enjoy your amazing art of food?So would we!</p><br><br>
@@ -265,7 +265,7 @@
 	</section>
 	<hr style="border:100px solid white;">
 	
-	<section class="Client-Reviews">
+	<section class="Client-Reviews" style="margin-top: 60px;">
 	<img class="heading" src="happy-customer.PNG">
 	<div class="row ">
 	<div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
@@ -477,7 +477,7 @@
 		
 <hr style="width:100%; border:1px solid #646362; margin-top:90px;">
 <div class="footer-copyright text-center py-3">© 2020 Copyright: 
-    <a href="Food Ordering System Menu.php"> Food Quest.com</a>
+    <a href="FoodOrderingSystem.php"> Food Quest.com</a>
   </div>
 </footer>
 	
@@ -618,7 +618,7 @@ $image="icon-4.png";
         }    
 
 
-$conn=mysqli_connect("localhost","root","","SignUp");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
 if($conn){
 	echo"connected successfully";
 }
@@ -637,7 +637,7 @@ $result=mysqli_query($conn,$sql);
 if($result){
 	echo "<script>alert('Account Created')</script>";
 	?>
-	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodQuestHomePage.php#SignUp">
+	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodQuestHomePage.php#SignUp">
 	<?php
 }else{
 	echo "notsuccessfully";

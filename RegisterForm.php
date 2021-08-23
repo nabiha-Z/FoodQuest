@@ -35,7 +35,7 @@ body {
    <div class="collapse navbar-collapse" id="navbarCollapse8">
    <ul id="list-inline" class="navbar-nav">
       <li class="navigation" id="nav-element"><a href="FoodQuestHomePage.php" class="nav-item nav-link ">Home</a></li>
-	  <li class="navigation" id="nav-element"><a href="About Us.html" class="nav-item nav-link">About</a></li>
+	  <li class="navigation" id="nav-element"><a href="AboutUs.php" class="nav-item nav-link">About</a></li>
 	  <li class="navigation" id="nav-element"><a href="FoodOrderingSystemMenu.php" class="nav-item nav-link">Menu</a></li>
 	  <li class="navigation" id="nav-element"><a class="nav-item nav-link active" onclick="document.getElementById('login').style.display='block' " >Login</a></li>
 	  <li class="navigation" id="nav-element"><a href="FoodQuestHomePage.php#SignUp" class="nav-item nav-link">Sign Up</a></li>
@@ -53,7 +53,7 @@ body {
 	    <div class="row">
 		<div class="col-lg-6 col-md-3 col-sm-2"> 
 		</div>
-		    <div class="col-lg-6 col-md-9 col-sm-10"> 
+		    <div class="col-lg-6 col-md-9 col-sm-12"> 
 			    <div class="Register-Box">
 				<h2>Want to become part of Food Quest?</h2> 
 				<p>Would you like thousands of new customers to Tasteful and enjoy your amazing art of food?So would we!</p><br><br>
@@ -328,7 +328,7 @@ $restAddr= $_REQUEST["ResturantAdd"];
         }    
 
 
-$conn=mysqli_connect("localhost","root","","register");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_register");
 if($conn){
 	echo"connected successfully";
 }

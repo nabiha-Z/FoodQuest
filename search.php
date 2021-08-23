@@ -1,5 +1,5 @@
 <?php
-    $conn=mysqli_connect("localhost","root","","fooditems");
+    $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 	$output="";
 	$query = "SELECT * FROM items WHERE Name LIKE '%".$_REQUEST["search"]."%' OR Resturant LIKE '%".$_REQUEST["search"]."%' OR Description LIKE '%".$_REQUEST["search"]."%' OR Detail LIKE '%".$_REQUEST["search"]."%' OR Genre LIKE '%".$_REQUEST["search"]."%' ";
 	
@@ -134,7 +134,7 @@ input[type=text]{
 		
 		echo "ERROR: Could not able to execute $insert. " . mysqli_error($conn);
 		  ?>
-	  <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodOrderingSystemMenu.php">
+	  <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodOrderingSystemMenu.php">
 	
 	  <?php
 	}

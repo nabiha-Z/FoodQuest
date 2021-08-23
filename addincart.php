@@ -63,7 +63,7 @@
    }else{
    
   
-  $conn=mysqli_connect("localhost","root","","foodcart");
+  $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_foodcart");
   //if($conn){
 	//  echo"connected successfully";
 	  //}
@@ -93,7 +93,7 @@ if($r){
 	echo "<script>alert('Added to Cart')</script>";
 	?>
 	
-	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodOrderingSystemMenu.php#foodmenu">
+	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodOrderingSystemMenu.php#foodmenu">
 <?php
 }
 else{
@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
    $password=$_REQUEST['password'];
    echo $username;
    
-   $conn=mysqli_connect("localhost","root","","SignUp");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
    
    $result=mysqli_query($conn,"SELECT * FROM signuptable WHERE Email = '$username' AND Password = '$password'");
   

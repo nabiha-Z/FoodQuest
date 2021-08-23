@@ -64,7 +64,7 @@
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $conn=mysqli_connect("localhost","root","","SignUp");
+    $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
 
 		$name=$_REQUEST['name'];
 		$email=$_REQUEST['email'];
@@ -82,7 +82,7 @@
 		$data = mysqli_query($conn, $query);
 		if($data){
 			?>
-			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodCart.php">
+			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodCart.php">
 		
 		<?php
 		}else{

@@ -61,7 +61,7 @@
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $conn=mysqli_connect("localhost","root","","fooditems");
+    $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 
 		
 	    $foodname= $_REQUEST["itemname"];
@@ -85,7 +85,7 @@
 			echo $detail;
 			echo "dedwede";
 			?>
-			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/AdminDashboard.php#Products">
+			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/AdminDashboard.php#Products">
 		
 		<?php
 		}else{

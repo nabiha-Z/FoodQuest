@@ -5,7 +5,7 @@
 	   header('Location: Register.php#RegisterForm');
 	   
    }
-   $conn=mysqli_connect("localhost","root","","register");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_register");
    $id=$_SESSION['id'];   
    $restuarnt=$_SESSION['ResName']; 
    $firstname = $_SESSION['firstname'];
@@ -16,7 +16,7 @@
        $row=mysqli_fetch_array($result);	
 	   $image=$row['ProfileImage'];
 	}
-	$conn3=mysqli_connect("localhost","root","","checkout");
+	$conn3=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_checkout");
 	$sql = "SELECT * FROM confirmorders WHERE Completed = 'No' AND ResturantName = '$restuarnt'";		
 	$selectresult = mysqli_query($conn3, $sql);
 	$counter=0;
@@ -463,7 +463,7 @@
                                     </thead>
                                     <tbody>
 									<?php
-						$conn=mysqli_connect("localhost","root","","checkout");
+						$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_checkout");
 						$sql = "SELECT * FROM confirmorders WHERE Completed = 'Yes'";
 						$selectresult = mysqli_query($conn, $sql);
 						
@@ -584,7 +584,7 @@
                                     </thead>
                                     <tbody>
 									<?php
-						$conn=mysqli_connect("localhost","root","","fooditems");
+						$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 						$sql = "SELECT * FROM items";
 						$selectresult = mysqli_query($conn, $sql);
 						if(mysqli_num_rows($selectresult) > 0){
@@ -776,7 +776,7 @@ function checkdelete(){
 </html>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-$conn=mysqli_connect("localhost","root","","fooditems");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 if($conn){
 	echo"connected successfully";
 }
@@ -812,7 +812,7 @@ $r=mysqli_query($conn,$sql);
 if($r){
 	echo "Added Successfully";
 	?>
-	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/AdminDashboard.php#Products">
+	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/AdminDashboard.php#Products">
 <?php
 }
 else{

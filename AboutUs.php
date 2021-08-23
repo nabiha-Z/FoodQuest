@@ -4,6 +4,7 @@
 ?>
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <title>Food Quest Home Page</title>
@@ -179,7 +180,7 @@
 	</div>
 </section>
 
-<section class="Feedback" id="feedback">
+<section class="Feedback" id="feedback" >
 	<div class="row">
 		<div class="col-lg-6 col-md-3 col-sm-2"></div>
 		<div class="col-lg-6 col-md-9 col-sm-10">
@@ -220,7 +221,7 @@
 					<div>
 					</section>
 			<footer class="Footer">
-  <div class="container">
+  <div class="container" style="margin-top: 170px;">
     <div class="row justify-content-center">
 	   <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12  mt-3">
 	   <h3>About Us</h3>

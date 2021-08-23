@@ -3,11 +3,11 @@
    if(!isset($_SESSION['id'])){
 	   echo "<script>alert('Login to your account First')</script>";
 ?>
-			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodQuestHomePage.php">
+			<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodQuestHomePage.php">
 		
 		<?php
    }
-   $conn=mysqli_connect("localhost","root","","SignUp");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
    $id=$_SESSION['id'];
    $result=mysqli_query($conn,"SELECT * FROM signuptable WHERE ID= '$id'");
 	
@@ -177,7 +177,7 @@
                             </div>
                             
 							
-							<div class="checkout-btn" style="background-color:rgba(51, 34, 10 ,0.9); margin-top:px; padding:20px;  text-align:center">
+							<div class="checkout-btn" style="background-color:rgba(51, 34, 10 ,0.9);">
 							<?php echo'<a style="color:#ECD191; font-size:20px; text-decoration:none" href="checkout.php" onclick="return confirmOrder()">Check Out</a>' ?>
 							</div>
 							</div>

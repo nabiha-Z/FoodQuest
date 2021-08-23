@@ -1,7 +1,7 @@
 <?php 
   session_start();
   $id=$_SESSION['id'];
-  $conn=mysqli_connect("localhost","root","","checkout");
+  $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_checkout");
  
 
 ?>

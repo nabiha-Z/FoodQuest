@@ -1,4 +1,3 @@
-
 @font-face{
 	src:url(fonts/AmaticSC-Regular.ttf);
 	src:url(fonts/IndieFlower-Regular.ttf);
@@ -599,7 +598,7 @@ h4{
 .fa-star{
 	color:#E2B10A;
 	width:51px;
-	margin-left:-40px;x
+	margin-left:-40px;
 }
 .user-image img{
 	width:50px;
@@ -676,14 +675,11 @@ h4{
 #RegisterButton{
   background-color:#CCBC69 ;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 14px;
+  margin: 8px;
   border: none;
   cursor: pointer;
-  
   opacity: 0.9;
-  
-  width: 50%;
 }
 #RegisterButton :hover{
 	opacity:0.5;
@@ -709,11 +705,15 @@ h4{
 	background-color:#FAF5F3  ;
 	border-radius:10px;
 	padding:45px;
+	height: auto;
+	padding-bottom: 80px;
 	box-shadow:-6px 8px 20px -8px #504B4A;
+	margin-bottom: 60px;
 }
 .Feedback-Box{
 	text-align:center;
 }
+
 
 .Register-Box p, .Feedback-Box p{
 	color:#767272;
@@ -1152,7 +1152,7 @@ h6, td{
 .Billing-content{
   padding: 30px; 
 }
-.Billing-content p.sub-total, {
+.Billing-content p.sub-total {
   padding-top: 15px;
   border-top: 1px solid #dddddd;
 }
@@ -1196,6 +1196,7 @@ h6, td{
 }
 
 .Already-Registered-Box{
+	margin-top: 50px;
 	border:1px solid #D5C38B;
 	width:40%;
 	padding:20px;
@@ -1395,6 +1396,10 @@ h6, td{
 .checkout-btn{
 	
 	background-color:rgba(164, 56, 56, 0.8);
+	margin-top:px; padding:20px;  
+	text-align:center;
+	width: auto;
+	height: auto;
 	
 }
 .checkout-btn p{

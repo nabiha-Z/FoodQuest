@@ -6,7 +6,7 @@
 	   header('location:Register.php#AdminLogin');
    }
    
-   $conn=mysqli_connect("localhost","root","","register");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_register");
    
    
    $result=mysqli_query($conn,"SELECT * FROM registertable WHERE Email = '$username' AND Password = '$password'");
@@ -43,7 +43,7 @@
    }else{
 	  echo "<script>alert('Incorrect username or password')</script>";
 	    ?>
-	  <meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/RegisterForm.php#AdminLogin">
+	  <meta HTTP-EQUIV="Refresh" content="0; URL=Food%20Ordeing%20System/RegisterForm.php#AdminLogin">
 	
 	  <?php
    }

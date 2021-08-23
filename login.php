@@ -6,7 +6,7 @@
 	   header('location:FoodOrderingSystemMenu.php');
    }
    
-   $conn=mysqli_connect("localhost","root","","SignUp");
+   $conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
    
    $result=mysqli_query($conn,"SELECT * FROM signuptable WHERE Email = '$username' AND Password = '$password'");
    

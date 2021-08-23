@@ -141,7 +141,7 @@ h4{
 						
 						<tbody>
 						<?php
-						$conn=mysqli_connect("localhost","root","","foodcart");
+						$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_foodcart");
 						$sql = "SELECT * FROM carttable";
 						$selectresult = mysqli_query($conn, $sql);
 						$userid=$_SESSION['id'];
@@ -184,7 +184,7 @@ h4{
 										
 									</tr>';
 									$counter+=1;
-									$conn2=mysqli_connect("localhost","root","","checkout");
+									$conn2=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_checkout");
 									
 						            
 											$query ="INSERT INTO confirmorders(ItemID, ProductName, Image, Description, Price, Quantity, UserID, ResturantName,OrderNo,Completed,CheckoutTime, CheckoutDate, Rated) VALUES('$itemID', '$productname', '$image', '$description' , '$price', '$quantity','$userid','$resturant','$orderNo', 'No', '$time', '$date', 'No')";

@@ -4,7 +4,7 @@
 	$increase=$_GET['inc'];
 	$decrease=$_GET['dec'];
 	$quantity=$_GET['quantity'];
-	$conn=mysqli_connect("localhost","root","","foodcart");
+	$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_foodcart");
 	
 	if($increase == 0){
 		$quantity-=1;
@@ -23,5 +23,5 @@
 		//echo "<script>alert('Record Deleted')</script>";
 	}
 		?>
-		<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/FoodCart.php#table">
+		<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/FoodCart.php#table">
 

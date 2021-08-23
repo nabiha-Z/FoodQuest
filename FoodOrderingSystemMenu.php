@@ -85,7 +85,7 @@
                     <div class="row">
                         
 						<?php
-						$conn=mysqli_connect("localhost","root","","fooditems");
+						$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_fooditems");
 						$sql = "SELECT * FROM items";
 						$selectresult = mysqli_query($conn, $sql);
 						$count=1;
@@ -217,7 +217,7 @@
 		
 <hr style="width:100%; border:1px solid #646362; margin-top:90px;">
 <div class="footer-copyright text-center py-3">© 2020 Copyright: 
-    <a href="Food Ordering System.html"> Food Quest.com</a>
+    <a href="FoodOrderingSystem.php"> Food Quest.com</a>
   </div>
   </div>
   </div>

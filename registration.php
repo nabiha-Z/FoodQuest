@@ -28,7 +28,7 @@ $image="icon-4.png";
         }    
 
 
-$conn=mysqli_connect("localhost","root","","register");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_register");
 if($conn){
 	echo"connected successfully";
 }
@@ -39,7 +39,7 @@ $dup=mysqli_query($conn,"SELECT * FROM registertable WHERE Email='$email'");
 if(mysqli_num_rows($dup)>0){
 	echo "<script>alert('This Account already exists')</script>";
 	?>
-	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/RegisterForm.php#RegisterForm">
+	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/RegisterForm.php#RegisterForm">
 	<?php
 }
 else{
@@ -49,7 +49,7 @@ $result=mysqli_query($conn,$sql);
 if($result){
 	echo "<script>alert('Registered')</script>";
 	?>
-	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System%20-%20FA18-BCS-081%20-%20FA18-BCS-114/RegisterForm.php">
+	<meta HTTP-EQUIV="Refresh" content="0; URL=http://localhost/Food%20Ordeing%20System/RegisterForm.php">
 	<?php
 }else{
 	echo "notsuccessfully";

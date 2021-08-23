@@ -11,7 +11,7 @@ $contact= $_REQUEST["contact"];
 echo $username ,$address, $email;
 
 
-$conn=mysqli_connect("localhost","root","","SignUp");
+$conn=mysqli_connect("localhost","simsscho_nabiha","nabiha1234@","simsscho_SignUp");
 if($conn){
 	echo"connected successfully";
 }
